@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8x8 Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            border: 2px solid #333;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .chessboard div {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chessboard div:nth-child(8n+1),
+        .chessboard div:nth-child(8n+3),
+        .chessboard div:nth-child(8n+5),
+        .chessboard div:nth-child(8n+7) {
+            background-color: #b58863;
+        }
+
+        .chessboard div:nth-child(8n+2),
+        .chessboard div:nth-child(8n+4),
+        .chessboard div:nth-child(8n+6),
+        .chessboard div:nth-child(8n+8) {
+            background-color: #f0d9b5;
+        }
+
+        .chessboard div:nth-child(16n+1),
+        .chessboard div:nth-child(16n+3),
+        .chessboard div:nth-child(16n+5),
+        .chessboard div:nth-child(16n+7) {
+            background-color: #f0d9b5;
+        }
+
+        .chessboard div:nth-child(16n+2),
+        .chessboard div:nth-child(16n+4),
+        .chessboard div:nth-child(16n+6),
+        .chessboard div:nth-child(16n+8) {
+            background-color: #b58863;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="chessboard">
+        <!-- First row (White pieces) -->
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg" alt="White Rook"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg" alt="White Knight"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg" alt="White Bishop"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Chess_qlt45.svg" alt="White Queen"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Chess_klt45.svg" alt="White King"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg" alt="White Bishop"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg" alt="White Knight"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg" alt="White Rook"></div>
+
+        <!-- Second row (White pawns) -->
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="White Pawn"></div>
+
+        <!-- Empty rows -->
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+
+        <!-- Seventh row (Black pawns) -->
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Black Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Black Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Black Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Black Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Black Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Black Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Black Pawn"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Black Pawn"></div>
+
+        <!-- Eighth row (Black pieces) -->
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Chess_rdt45.svg" alt="Black Rook"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Chess_ndt45.svg" alt="Black Knight"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt45.svg" alt="Black Bishop"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Chess_qdt45.svg" alt="Black Queen"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Chess_kdt45.svg" alt="Black King"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt45.svg" alt="Black Bishop"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Chess_ndt45.svg" alt="Black Knight"></div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Chess_rdt45.svg" alt="Black Rook"></div>
+    </div>
+</body>
+</html>

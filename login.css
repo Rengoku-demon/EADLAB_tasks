@@ -1,0 +1,37 @@
+/* Add some hover effects to the buttons */
+button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Add some padding to the container */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Add some style to the input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Add some style to the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add some style to the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }

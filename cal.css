@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 320px; /* Fixed width for proper layout */
+}
+
+#display {
+    width: 100%;
+    height: 60px; /* Increase height for better visibility */
+    border: none;
+    background: #222;
+    color: #fff;
+    text-align: right;
+    font-size: 28px; /* Increase font size for better readability */
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    background: #fff;
+    border: 1px solid #ccc; /* Add border to buttons for better separation */
+    padding: 20px;
+    font-size: 24px; /* Increase font size for better readability */
+    cursor: pointer;
+    transition: background 0.3s;
+    box-sizing: border-box; /* Ensure padding and border are included in button size */
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+.btn:active {
+    background: #ddd; /* Slightly darker background when button is pressed */
+}
+
+.zero {
+    grid-column: span 2; /* Make the '0' button span two columns */
+}
